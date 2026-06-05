@@ -1,0 +1,23 @@
+VERSION CORREGIDA CATALOGO PREMIUM MOBILE-FIRST
+
+1) Abrir esta carpeta.
+2) Doble clic en start-windows.bat.
+3) Dejar abierta la ventana negra.
+4) Abrir http://localhost:3000
+5) Panel: http://localhost:3000/admin-cortesanos
+
+Si usas CMD manual:
+cd /d C:\Users\vinot\OneDrive\Escritorio\Webs\cultura-cortesana-web-catalog-premium-v2
+npm install
+copy .env.example .env
+npm run build
+npm start
+
+Correcciones aplicadas:
+- Tarjetas compactas para celular.
+- Mejor contraste en fondo oscuro.
+- Se removieron textos oscuros sobre fondo oscuro.
+- Boton de agregar horizontal y limpio, no columna alta.
+- Grid mobile-first.
+- Catalogo real, buscador arriba y filtros.
+- Validacion por codigo de entrada: General o VIP.

@@ -1,0 +1,37 @@
+CAMBIOS V6 — VOUCHER AL FINAL DEL CHECKOUT
+
+1. Se eliminó la ventana inicial de entrada/VIP.
+2. La web entra directo al catálogo como compra General por defecto.
+3. El voucher se pregunta recién al finalizar el pedido, dentro del carrito.
+4. Si el cliente no carga código VIP, se aplica automáticamente voucher General de $25.000.
+5. Si el cliente marca “Sí, VIP”, debe ingresar un código VIP válido.
+6. El código VIP solo cambia el voucher a $65.000. No bloquea vinos.
+7. Los vinos destacados los puede comprar cualquier cliente.
+8. Se agregó límite máximo de vouchers VIP: 50 pedidos.
+9. Se agregó validación de código VIP de un solo uso para evitar que se comparta.
+10. Se mantiene la aclaración de usar el mismo nombre, apellido y WhatsApp de la entrada.
+
+CONFIGURACIÓN IMPORTANTE
+
+En config/site.config.json:
+
+"vipVoucherLimit": 50
+
+Y dentro de ticketAccess:
+
+"requireUniqueVipCode": true
+
+Para usar códigos únicos reales, cargar 50 códigos en:
+
+"codes": [
+  { "code": "VIP-001", "type": "vip" },
+  { "code": "VIP-002", "type": "vip" }
+]
+
+También podés asociar nombre y teléfono al código:
+
+"codes": [
+  { "code": "VIP-001", "type": "vip", "name": "Juan Pérez", "phone": "3492123456" }
+]
+
+Si se carga name/phone, el backend valida que coincidan con los datos del checkout.

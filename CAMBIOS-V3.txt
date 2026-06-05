@@ -1,0 +1,7 @@
+CAMBIOS V3
+- La sección VIP pasa a ser Selección destacada.
+- Todos los vinos pueden comprarse con código General o VIP.
+- El código solo define el voucher aplicado: General $25.000 o VIP $65.000.
+- El backend ya no bloquea vinos destacados para clientes General.
+- El checkout reenvía el código validado como respaldo si la sesión/cookie se pierde.
+- El frontend guarda el acceso validado en localStorage y lo revalida al recargar.

@@ -1,0 +1,28 @@
+{
+  "showPrices": false,
+  "enableOrders": false,
+  "eventName": "Cultura Cortesana",
+  "eventSubtitle": "8 años. 150 etiquetas. Una tarde para brindar en el viñedo.",
+  "eventDate": "Sábado 13 de junio de 2026",
+  "eventTime": "13:30 hs",
+  "eventLocation": "Finca Los Teros, Bella Italia",
+  "currency": "ARS",
+  "whatsappTarget": "543492717777",
+  "vouchers": {
+    "general": 25000,
+    "vip": 65000
+  },
+  "catalogBackgroundImage": "",
+  "ticketAccess": {
+    "enabled": true,
+    "generalCodes": [],
+    "vipCodes": [
+      "VIP-2026"
+    ],
+    "codes": [],
+    "defaultGeneralAccess": true,
+    "vipVoucherLimit": 50,
+    "requireUniqueVipCode": true
+  },
+  "vipVoucherLimit": 50
+}
