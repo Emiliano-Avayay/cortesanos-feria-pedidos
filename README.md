@@ -7,11 +7,9 @@ Deploy recomendado: Cloudflare Pages + Pages Functions + Supabase.
 ```txt
 Build command: npm run build
 Build output directory: client/dist
-Root directory: /
+Root directory: dejar vacio
 Node version: 20
 ```
-
-La configuracion de Pages tambien esta fijada en `wrangler.jsonc`.
 
 ## Variables
 
