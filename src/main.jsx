@@ -274,6 +274,11 @@ function VoucherInfo({ config }) {
   );
 }
 
+function ClosedNotice({ config }) {
+  const text = !config.showPrices ? 'Los precios serán visibles el día del evento con descuentos exclusivos.' : 'Venta exclusiva disponible durante la feria.';
+  return <div className="mb-4 mt-4 rounded-2xl border border-cort-gold/25 bg-black/35 px-4 py-3 text-sm text-white/70">{text}</div>;
+}
+
 function VipSection({ wines, config, addToCart }) {
   return (
     <section className="mt-5 rounded-[1.8rem] border border-cort-gold/25 bg-[#15110e]/92 p-4 shadow-premium sm:p-5">
