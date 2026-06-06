@@ -11,6 +11,8 @@ Root directory: /
 Node version: 20
 ```
 
+La configuracion de Pages tambien esta fijada en `wrangler.jsonc`.
+
 ## Variables
 
 Configurar en Cloudflare Pages > Settings > Environment variables:
