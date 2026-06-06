@@ -1,6 +1,6 @@
 {
-  "showPrices": true,
-  "enableOrders": true,
+  "showPrices": false,
+  "enableOrders": false,
   "eventName": "Cultura Cortesana",
   "eventSubtitle": "8 años. 150 etiquetas. Una tarde para brindar en el viñedo.",
   "eventDate": "Sábado 13 de junio de 2026",
@@ -17,7 +17,7 @@
     "enabled": true,
     "generalCodes": [],
     "vipCodes": [
-      "VIP-2026"
+      "FERIACORTESANA2026"
     ],
     "codes": [],
     "defaultGeneralAccess": true,
