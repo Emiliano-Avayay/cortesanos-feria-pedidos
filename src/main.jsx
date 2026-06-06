@@ -128,7 +128,7 @@ function PublicStore() {
       <div className="catalog-overlay" />
       <div className="relative z-10 min-h-screen">
         <CatalogHeader config={config} cartCount={cartCount} onOpenCart={() => setCartOpen(true)} />
-        <main className="mx-auto grid max-w-7xl gap-5 px-3 pb-32 pt-4 md:grid-cols-[240px_1fr] md:px-5 md:pt-6">
+        <main className="mx-auto grid grid-cols-1 max-w-7xl gap-5 px-3 pb-32 pt-4 md:grid-cols-[240px_minmax(0,1fr)] md:px-5 md:pt-6">
           <CatalogSidebar
             categories={categories}
             category={category}
@@ -224,7 +224,7 @@ function CatalogTop(props) {
 
   return (
     <div className="catalog-top">
-      <div className="grid gap-4 lg:grid-cols-[1fr_340px]">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1fr)_340px]">
         <div>
           <p className="text-xs uppercase tracking-[0.32em] text-cort-gold">Catálogo exclusivo de feria</p>
           <h2 className="mt-2 font-display text-4xl leading-none text-white sm:text-5xl">Elegí tus vinos y armá tu pedido</h2>
@@ -242,7 +242,7 @@ function CatalogTop(props) {
             className="w-full rounded-2xl border border-cort-gold/25 bg-[#191512] px-10 py-4 text-base text-white outline-none placeholder:text-white/40 focus:border-cort-gold"
           />
         </div>
-        <div className="mt-3 grid gap-2 sm:grid-cols-[1fr_1fr_auto]">
+        <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_auto]">
           <select value={wineryFilter} onChange={e => setWineryFilter(e.target.value)} className="select-dark">
             {wineries.map(w => <option key={w} value={w}>{w === 'Todas' ? 'Todas las bodegas' : w}</option>)}
           </select>
