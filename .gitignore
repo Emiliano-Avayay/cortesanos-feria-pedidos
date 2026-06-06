@@ -1,5 +1,7 @@
 node_modules/
 client/dist/
+.wrangler/
+.dev.vars
 data/*.sqlite
 data/*.sqlite-*
 .env
