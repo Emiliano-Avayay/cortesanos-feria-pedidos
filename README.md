@@ -6,7 +6,7 @@ Deploy recomendado: Cloudflare Pages + Pages Functions + Supabase.
 
 ```txt
 Build command: npm run build
-Build output directory: client/dist
+Build output directory: dist
 Root directory: dejar vacio
 Node version: 20
 ```
@@ -28,8 +28,8 @@ WHATSAPP_TARGET=543492717777
 Editar:
 
 ```txt
-client/public/data/site.config.json
-client/public/data/wines.config.json
+public/data/site.config.json
+public/data/wines.config.json
 ```
 
 Para activar venta:

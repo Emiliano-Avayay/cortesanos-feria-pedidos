@@ -5,9 +5,9 @@
   "type": "module",
   "description": "Web de pedidos para Cultura Cortesana / Los Cortesanos",
   "scripts": {
-    "dev": "vite --host 0.0.0.0 --config client/vite.config.js",
-    "build": "vite build --config client/vite.config.js",
-    "preview": "vite preview --host 0.0.0.0 --config client/vite.config.js"
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",
